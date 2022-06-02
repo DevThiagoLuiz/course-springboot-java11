@@ -58,6 +58,10 @@ public class OrderItem implements Serializable {
 	public void setQuantity(Integer quantity) {
 		this.quantity = quantity;
 	}
+	
+	public double getSubTotal() {
+		return price * quantity;
+	}
 
 	public Double getPrice() {
 		return price;
